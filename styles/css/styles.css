@@ -1,0 +1,306 @@
+*{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin: 0;
+    padding: 0;
+}
+
+ 
+.horizontal-position{
+    align-items: center;
+    align-content: center;
+  }
+  
+  
+  header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/bg-gradient.jpg');
+    background-size: cover;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    color: white;
+  }
+  
+  
+  
+  .navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+    height: 6em;
+  }
+  
+  .navLinks {
+    list-style-type: none;
+    display: flex;
+    margin-top: 1em;
+  }
+  
+  .navLinks li {
+    margin-left: 3em;
+  }
+  .navLinks li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navLinks li :hover {
+    background-color: white;
+    color: black;
+    padding: 0.2em 2em;
+    transition: all 0.5s ease;
+    border-radius: 2em;
+  }
+  
+  .active{
+    background-color: white;
+    color: black !important;
+    padding: 0.2em 2em;
+    transition: all 0.5s ease;
+    border-radius: 2em;
+  }
+  
+  .actives{
+    color: black !important;
+    text-decoration: none;
+  }
+  
+  
+  
+  h1 a {
+    color: gold;
+    text-decoration: none;
+  }
+  
+  .styled {
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+    display: flex;
+  }
+  .header-content {
+    margin-right: 1em;
+    text-align: center;
+    width: 70%;
+  }
+  .hamburger {
+    display: none;
+  }
+  
+  .menu-hamburger {
+    display: none;
+  }
+  
+  .transform{
+    text-transform: uppercase;
+  }
+  
+  .fw{
+    color: rgb(125, 158, 249);
+  }
+  
+  @keyframes discorverMe {
+    0% {
+      position: relative;
+      top: 0.5em
+    }
+    
+    50% {
+      position: relative;
+      top: 1em;
+    }
+    100% {
+      position: relative;
+      top: 0em;
+    }
+  }
+  
+  .animatedButton{
+    animation-name: discorverMe;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+  }
+   .border-bottom{
+       border-bottom-style: groove;
+    }
+  
+  
+  .header-content h1{
+    font-weight: normal;
+  }
+  @media screen and (max-width: 500px) {
+     .navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em !important;
+    height: 5em;
+  }
+   .menu-hamburger{
+    top: 5em !important;
+    height: calc(100vh - 5em) !important;
+      
+    }
+  
+    
+  }
+  
+  @media screen and (max-width: 1024px) {
+  
+    
+    .navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em;
+   
+  }
+  
+  .header-content h1{
+    font-size: 2em;
+    border-style: groove;
+    
+  
+  }
+  
+  .header-content{
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .styled {
+    align-items: center;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+    display: block;
+  }
+  
+  
+  
+    .navLinks {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+  
+      
+    }
+  
+    .hamburger-border{
+      border-style: groove;
+      border-radius: 1em;
+      border-width: 1px;
+    }
+  
+   
+    .menu-hamburger {
+      display: block;
+      position: absolute;
+      top: 6em;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: calc(100vh - 4em) !important;
+      margin-left: -100%;
+      transition: 0.5s ease;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+      backdrop-filter: blur(25px);
+   
+    }
+    
+    
+  
+    .displayed {
+      margin-left: 0;
+      transition: 300ms ease;
+    }
+  .menu-hamburger ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+   
+  
+  }
+  
+  .menu-hamburger ul li{
+    margin: 1.5em 0;
+  
+  }
+  
+  .menu-hamburger ul li a {
+    background-color: white;
+    color: black;
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    text-decoration: none;
+    box-shadow: inset 0 0 1em gold;
+    
+  
+    
+  }
+  .menu-hamburger ul li a:hover{
+    box-shadow: inset 0 0 1em red;
+    
+  }
+  
+  .actived{
+    box-shadow: inset 0 0 1em red !important;
+  }
+  
+  }
+
+  .typed-cursor {
+    height: 50px !important;
+  }
+  .center-image{
+    text-align: center;
+  }
+  
+  .centered {
+  
+    font-size: 2em;
+  }
+  
+  .welcome{
+    color: yellow
+  }
+  .welcome1{
+    color: blue
+  }
+  
+  .profil-picture{
+    padding-bottom: 5em;
+  }
+  
+  #space {
+    padding: 0.4em 0.3em;
+    background-color: white;
+    animation-name: anim;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes anim {
+    0% {
+      background-color: black;
+    }
+    100% {
+      background-color: white;
+    }
+  }
+
+
