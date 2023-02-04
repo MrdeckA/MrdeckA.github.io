@@ -63,10 +63,15 @@
     transition: all 0.5s ease;
     border-radius: 2em;
   }
+
+  /* display: none */
+  .display-none{
+    display: none;
+  }
   
   .active{
     background-color: white;
-    color: black !important;
+    color: black;
     padding: 0.2em 2em;
     transition: all 0.5s ease;
     border-radius: 2em;
@@ -241,6 +246,7 @@
     flex-direction: column;
     list-style-type: none;
     align-items: center;
+    margin-top: 3em;
    
   
   }
