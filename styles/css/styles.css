@@ -5,6 +5,16 @@
 }
 
  
+
+.social-list-item {
+  height: 3rem;
+  width: 3rem;
+  line-height: calc(2rem - 2px);
+  display: block;
+  border: 2px solid white !important;
+  border-radius: 50%;
+  color: white !important;
+}
 .horizontal-position{
     align-items: center;
     align-content: center;
